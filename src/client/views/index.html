@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluate with NLP</title>
+</head>
+<body>
+    <main>
+    <section class="section1">
+        <div class ="input">
+            <h1>Evaluate a news article with Natural Language Processing</h1>
+            <form id=set onsubmit="return Client.handleSubmit(event)">    
+                <input type="text" placeholder="Enter url here" class="zip" id="url">
+                
+                <button type="submit" class="generate" id="generate" onclick="return Client.handleSubmit(event)"  onsubmit="return Client.handleSubmit(event)">SUBMIT</button>    
+            </form>
+        </div>
+    </section>
+    <section class="section2" id="section2">
+    <div class="entryHolder">
+        <p class="result"></p>
+        <p class="subjectivity"></p>
+        <p class="score"></p>        
+    </div>
+</section>
+</main>
+
+<script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+
+</body>
+</html>
