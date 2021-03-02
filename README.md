@@ -3,9 +3,9 @@ This repo is your starter code for the project. It is the same as the starter co
 
 The goal of this project is to give you practice with:
 
-Setting up Webpack
-Sass styles
-Webpack Loaders and Plugins
-Creating layouts and page design
-Service workers
-Using APIs and creating requests to external urls
+*Setting up Webpack
+*Sass styles
+*Webpack Loaders and Plugins
+*Creating layouts and page design
+*Service workers
+*Using APIs and creating requests to external urls
